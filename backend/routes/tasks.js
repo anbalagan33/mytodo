@@ -4,7 +4,7 @@ const Task = require('../models/Task');
 
 
 
-// GET all taskS
+// GET all task
 router.get('/', async (req, res) => {
     const tasks = await Task.find();
     res.json({message:"Data received", tasks});
